@@ -49,7 +49,7 @@ export default function Hero() {
           interfaces. I communicate clearly, learn fast, and continuously improve my craft.
         </p>
         <motion.a
-          href="/cv/AlexisUS.pdf"
+          href={`${import.meta.env.BASE_URL}cv/AlexisUS.pdf`}
           download
           className="cv-button neon-cv"
           initial={{ opacity: 0, y: 20 }}
