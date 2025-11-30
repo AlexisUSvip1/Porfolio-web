@@ -605,79 +605,18 @@ footer {
 }
 
 
-.neon-cv {
+.cv-button {
+  margin-top: 30px;
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 42px;
-  font-size: 1.1rem;
-  font-weight: 600;
+  padding: 12px 28px;
+  background: var(--accent);
   color: white;
-  border-radius: 12px;
-  position: relative;
-  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
-  letter-spacing: 0.7px;
-
-  background: rgba(0, 40, 60, 0.35); /* dark cyan glass */
-  backdrop-filter: blur(12px);
-  border: 2px solid transparent;
-
-  /* Glow cyan/blue */
-  box-shadow: 0 0 18px #00faff40, 0 0 30px #008cff30;
-  transition: all 0.3s ease;
-  overflow: hidden;
+  transition: background 0.2s;
 }
 
-/* ⭐ Animated cyan-blue border */
-.neon-cv::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border-radius: 12px;
-  z-index: -1;
-
-  background: linear-gradient(
-    135deg,
-    #00faff,
-    #00eaff,
-    #008cff,
-    #00aaff,
-    #00faff
-  );
-  background-size: 260% 260%;
-  animation: cyanFlow 6s ease infinite;
-  opacity: 0.8;
-}
-
-@keyframes cyanFlow {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* subtle internal glow */
-.neon-cv::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 10px;
-  background: radial-gradient(
-    circle at center,
-    #00faff25,
-    #008cff10,
-    transparent 70%
-  );
-  opacity: 0.35;
-  transition: opacity 0.3s ease;
-}
-
-.neon-cv:hover::after {
-  opacity: 0.6;
-}
-
-/* Hover effects */
-.neon-cv:hover {
-  box-shadow:
-    0 0 25px #00faff80,
-    0 0 45px #008cff60;
+.cv-button:hover {
+  background: #5a50ff;
 }

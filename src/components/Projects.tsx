@@ -11,6 +11,7 @@ import {
   SiDart,
 } from 'react-icons/si';
 import { FaBrain, FaMapMarkedAlt, FaNetworkWired } from 'react-icons/fa';
+import { GiGemini } from 'react-icons/gi';
 
 export interface Project {
   title: string;
@@ -31,6 +32,7 @@ const techIcons: Record<string, JSX.Element> = {
   AI: <FaBrain />,
   'Maps API': <FaMapMarkedAlt />,
   WebSockets: <FaNetworkWired />,
+  Gemini: <GiGemini/>
 };
 
 const projects: Project[] = [
@@ -69,6 +71,13 @@ const projects: Project[] = [
     description:
       'Interactive map application that lets users view stores in real time, see distances, track movement, and navigate to the destination directly from the app. Includes GPS tracking, real-time WebSocket updates, and a clean mobile-first interface.',
     tech: 'React, Node.js, Maps API, WebSockets',
+    color: 'linear-gradient(135deg, #00ffd5, #00ff88, #00ff3c)', // aqua–green neon
+  },
+  {
+    title: 'Todo List - AI',
+    description:
+      'Interactive List Todo for create your task and have seggesstion about your habits, your focus and get information about that one',
+    tech: 'React, Node.js, Firebase, AI, Gemini',
     color: 'linear-gradient(135deg, #00ffd5, #00ff88, #00ff3c)', // aqua–green neon
   },
 ];
